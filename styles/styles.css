@@ -1,3 +1,7 @@
+:root {
+    --header-font: "Syncopate", sans-serif;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -12,9 +16,12 @@ nav{
 }
 
 .navbar-brand{
-    font-size: 18px;
-    font-weight: bold;
-    
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: var(--header-font);
+    letter-spacing: -2px;
+    text-transform: uppercase;  
+    padding: 25px 40px 25px 50px;
 }
 
 .nav-link{
@@ -30,4 +37,121 @@ nav{
     position: relative;
     padding-bottom: 5px;
     transition: color 0.3s;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+    background-color: #f5b754;
+  }
+
+.btn {
+    padding: 1rem 1.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.header__container {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: 5rem;
+}
+
+.header__container h1 {
+    max-width: 750px;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+    font-size: 4.5rem;
+    font-weight: 700;
+    font-family: var(--header-font);
+    letter-spacing: -5px;
+    line-height: 5rem;
+    text-align: center;
+}
+
+.header__container form {
+    max-width: 800px;
+    margin-inline: auto;
+    margin-bottom: 4rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: #f5b754;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.header__container .input__group {
+    flex: 1 0 170px;
+    display: grid;
+    gap: 10px;
+}
+
+.header__container label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.header__container input {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    color: lightgray;
+    background-color: #f5b754;
+}
+
+.header__container img {
+    max-width: 1050px;
+    margin-inline: auto;
+    filter: drop-shadow(5px 20px 20px rgba(0, 0, 0, 0.5));
+}
+
+.header__container::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 50%;
+    background-color: #f5b754;
+    transform: translateY(50%) skewY(-4deg);
+}
+
+.container {
+    text-align: center;
+}
+
+/*media*/
+@media (max-width: 1200px) {
+    .head-img{
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .head-img{
+        width: 100%;
+    }
 }
