@@ -34,18 +34,34 @@
         <h1 class="h1-SR">SUPERCAR RENTAL</h1>
         <form action="/">
           <div class="input__group">
-            <label for="location">Pick up & Return location</label>
-            <input type="text" name="location" id="location" placeholder="Rotterdam, Zuid-Holland">
+            <label for="provincie">Kies een provincie:</label>
+            <select id="provincie" onchange="updateSteden()">
+              <option value="">-- Selecteer --</option>
+              <option value="drenthe">Drenthe</option>
+              <option value="flevoland">Flevoland</option>
+              <option value="friesland">Friesland</option>
+              <option value="gelderland">Gelderland</option>
+              <option value="groningen">Groningen</option>
+              <option value="limburg">Limburg</option>
+              <option value="noord-brabant">Noord-Brabant</option>
+              <option value="noord-holland">Noord-Holland</option>
+              <option value="overijssel">Overijssel</option>
+              <option value="utrecht">Utrecht</option>
+              <option value="zeeland">Zeeland</option>
+              <option value="zuid-holland">Zuid-Holland</option>
+            </select>
           </div>
 
           <div class="input__group">
-            <label for="start">Start</label>
-            <input type="text" name="start" id="start" placeholder="10 Jan, 09:00 AM">
+            <label for="stad">Kies een stad:</label>
+            <select id="stad">
+              <option value="">-- Eerst provincie kiezen --</option>
+            </select>
           </div>
 
           <div class="input__group">
-            <label for="stop">Stop</label>
-            <input type="text" name="stop" id="stop" placeholder="12 Jan, 18:00 PM">
+            <label for="tijd">Datum & Tijd:</label>
+            <!--volgende keer toevoegen-->
           </div>
           <button class="btn">
             <i class="ri-search-line"></i>
