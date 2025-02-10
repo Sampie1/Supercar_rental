@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.auth-btn{
+    background-color: #f5b754;
+    width: 240px;
+    font-weight: bold;
+}
+
+.auth-btn:hover{
+    background-color: #faae33;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .auth-btn {
+        margin-top: 20px;
+    }
+}

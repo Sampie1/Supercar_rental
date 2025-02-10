@@ -107,6 +107,12 @@ nav{
     gap: 10px;
 }
 
+.tijd{
+    flex: auto;
+    display: grid;
+    gap: 5px;
+}
+
 .header__container label {
     font-size: 0.9rem;
     font-weight: 600;

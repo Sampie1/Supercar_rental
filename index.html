@@ -23,8 +23,8 @@
             <div class="navbar-nav ms-auto"> <!--ms-auto zorgt er voor dat het naar de rechterkant wordt verplaatst-->
               <a class="nav-link" href="#">Home</a>
               <a class="nav-link" href="#">About us</a>
-              <a class="nav-link" href="#">Deals</a>
               <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="choose_auth.html">Account</a>
             </div>
           </div>
         </div>
@@ -55,18 +55,20 @@
           <div class="input__group">
             <label for="stad">Kies een stad:</label>
             <select id="stad">
-              <option value="">-- Eerst provincie kiezen --</option>
+              <option value="">Eerst provincie kiezen</option>
             </select>
           </div>
 
-          <div class="input__group">
+          <div class="tijd">
             <label for="tijd">Datum & Tijd:</label>
-            <!--volgende keer toevoegen-->
+            <input type="datetime-local" name="tijd" id="tijd">
           </div>
+
           <button class="btn">
             <i class="ri-search-line"></i>
           </button>
         </form>
+        
         <div class="container">
         <img  class="head-img" src="assets/header.png">
         </div>
